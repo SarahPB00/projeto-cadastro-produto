@@ -1,7 +1,7 @@
 ﻿using GGP.Web.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CadApi.Models {
+namespace CadApi.Infra {
     public class ProdutoContext : DbContext {
         public ProdutoContext(DbContextOptions< ProdutoContext> options)
             : base(options) {

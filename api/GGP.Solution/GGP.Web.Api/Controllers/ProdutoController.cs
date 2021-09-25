@@ -1,4 +1,4 @@
-﻿using CadApi.Models;
+﻿using CadApi.Infra;
 using GGP.Web.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
