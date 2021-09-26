@@ -45,6 +45,9 @@ namespace GGP.Web.Api.Controllers {
                 return BadRequest();
             }
 
+            if (_context.Produtos.Any(c => c.Descricao.Equals(produto.Descricao) && c.Codigo != produto.Codigo))
+                return BadRequest($"Já existe um produto com a descrição {produto.Descricao}");
+
             produto.Validar();
 
             if (produto.HasError) {

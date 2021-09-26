@@ -128,3 +128,4 @@ C:\Users\sarah\source\repos\projeto-cadastro-produto\projeto-cadastro-produto\ap
 C:\Users\sarah\source\repos\projeto-cadastro-produto\projeto-cadastro-produto\api\GGP.Solution\GGP.Web.Api\obj\Debug\net5.0\ref\GGP.Web.Api.dll
 C:\Users\sarah\source\repos\projeto-cadastro-produto\projeto-cadastro-produto\api\GGP.Solution\GGP.Web.Api\obj\Debug\net5.0\GGP.Web.Api.pdb
 C:\Users\sarah\source\repos\projeto-cadastro-produto\projeto-cadastro-produto\api\GGP.Solution\GGP.Web.Api\obj\Debug\net5.0\GGP.Web.Api.genruntimeconfig.cache
+C:\Users\sarah\source\repos\projeto-cadastro-produto\projeto-cadastro-produto\api\GGP.Solution\GGP.Web.Api\obj\Debug\net5.0\GGP.Web.Api.csprojAssemblyReference.cache

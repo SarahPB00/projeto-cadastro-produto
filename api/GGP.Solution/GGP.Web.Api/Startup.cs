@@ -17,10 +17,12 @@ namespace GGP.Web.Api {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
 
-            services.AddControllers();
 
-            services.AddDbContext<ProdutoContext>(opt =>
-                                               opt.UseInMemoryDatabase("ProdutoDb"));
+            services.AddControllersWithViews();
+
+            services.AddDbContext<ProdutoContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("ProdutoConnection"))); 
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,6 +30,13 @@ namespace GGP.Web.Api {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(config => {
+
+                config.AllowAnyOrigin();
+                config.AllowAnyHeader();
+                config.AllowAnyMethod();
+            });
 
             app.UseRouting();
 
